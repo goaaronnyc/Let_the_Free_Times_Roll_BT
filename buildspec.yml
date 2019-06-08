@@ -11,4 +11,4 @@ phases:
       - npm run build -prod
   post_build:
     commands:
-      - aws --region <REGION> s3 sync ./dist/ s3://<BUCKET_NAME>/ --acl=public-read --delete
+      - aws --region ap-southeast-2 s3 sync ./dist/ s3://acloud-makerlab-code-bucket-01/ --acl=public-read --delete
